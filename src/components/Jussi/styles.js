@@ -4,23 +4,28 @@ import styled from 'styled-components'
 export const JussiContainer = styled.section`
  
   background: linear-gradient(90deg, #FFFFFF 50%, #F2F2F2 50%);
-  height: 64.8rem;
 `;
-
 
 export const JussiContent = styled.div`
 
   display: flex;
-
-  width: 102.4rem;
-  height: 64.8rem;
-  margin: 0 auto;
-  
+  max-width: 102.4rem;
+  margin: 0 auto;  
   padding: 6.4rem 0 6.4rem 0;
+  
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const JussiText = styled.div`
   width: 24.1rem;
+  
+
+  @media screen and (max-width: 800px) {
+    padding: 1rem;
+    width: 100%;
+  }
 
   h2 {
     font-family: 'Barlow';
@@ -29,6 +34,13 @@ export const JussiText = styled.div`
     text-transform: uppercase;
     margin-bottom: 2.4rem;
     line-height: 4.2rem;
+    width: 20rem;
+
+    @media screen and (max-width: 800px) {
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+    }
     
   }
 
@@ -37,6 +49,10 @@ export const JussiText = styled.div`
     font-size: 1.6rem;
     line-height: 2.4rem;
     margin-bottom: 3.6rem;
+
+    @media screen and (max-width: 800px) {
+      text-align: justify;
+    }
   }
 
   button {
@@ -50,6 +66,10 @@ export const JussiText = styled.div`
       background-color: transparent;
       transition: all .3s ease-in;
 
+    @media screen and (max-width: 800px) {      
+      margin-bottom: 2.6rem;
+    }
+
       &:hover{
         background-color: #000;
         color: #fff;
@@ -59,6 +79,16 @@ export const JussiText = styled.div`
 
 `;
 
+export const JussiButtonWrapper = styled.div`
+
+  width: 100%;
+  text-align: left;
+
+  @media screen and (max-width: 800px) {      
+    text-align: center;
+    }
+`;
+
 export const JussiImages = styled.div`
     width: 80%;
 
@@ -66,9 +96,18 @@ export const JussiImages = styled.div`
     justify-content: flex-end;
     align-items: center;
 
+    @media screen and (max-width: 800px) {      
+      margin: 0 auto;
+      width: 95%;
+    }
+
   img {
-    height: 52rem;
-    width: 67.6rem;  
+    width: 85%;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 `;
 

@@ -48,23 +48,34 @@ export const CardContainer = styled.div`
   }
 
   &.geladeira{
-    position: absolute;
-    top: 17rem;
-    left: 0;
+    grid-row: 4/6;
+
+    @media screen and (max-width: 500px) {        
+      grid-row: 5/5; 
+      z-index: 3; 
+    } 
   }
 
   &.batedeira{
-    top: 1rem;
-    z-index: 5;
-    position: absolute;
-    left: 13rem;
-  }
+    grid-column: 3/5;
+    grid-row: 1/4;
+    z-index: 3;
 
+    @media screen and (max-width: 500px) {        
+    
+      grid-column: 3/5;
+      grid-row: 1/4;
+      z-index: 4;
+    } 
+  }
 
   &.bebida{
-    top: 22rem;
-    position: absolute;
-    left: 26rem;
-  }
+    grid-row: 5/9;
+    grid-column: 5/5;
 
+    @media screen and (max-width: 500px) {        
+      grid-row: 8/7; 
+      grid-column: 3/6;
+    }
+  }
 `;

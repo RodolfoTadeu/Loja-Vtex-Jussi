@@ -3,7 +3,12 @@ import React from 'react';
 import Batedeira from '../../images/banner/batedeira.png';
 import Geladeira from '../../images/banner/geladeira.png';
 import Bebida from '../../images/banner/bebiba.png';
-import {BannerContainer, BannerContent, BannerText, BannerImages} from './styles';
+import {
+BannerContainer,
+BannerContent,
+BannerText,
+BannerImages
+} from './styles';
 
 import Card from '../CardBanner/index';
 

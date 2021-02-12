@@ -13,6 +13,11 @@ export const FooterContent = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+
+    @media screen and (max-width: 900px) {        
+      padding: 0 1.5rem;
+    } 
+
 `;
 
 export const FooterSocialMedia = styled.div`

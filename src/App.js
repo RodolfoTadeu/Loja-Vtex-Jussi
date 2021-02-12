@@ -1,5 +1,3 @@
-// import Header from './components/Header';
-// import Sidebar from './components/Sidebar';
 import { DataProvider } from "./context/DataContext";
 import Banner from "./components/Banner";
 import Stores from "./components/Stores";
@@ -18,8 +16,6 @@ function App() {
   return (
     <DataProvider>
       <Router>
-        {/* <Header /> */}
-        {/* <Sidebar /> */}
         <Home />
         <Banner />
         <Stores />

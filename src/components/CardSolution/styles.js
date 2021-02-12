@@ -3,17 +3,14 @@ import styled from 'styled-components';
 export const CardSolutionContainer = styled.div`
     width: 24.1rem;
     height: 38.1rem;
-    //background: goldenrod;
     border: 1px solid #F2F2F2;
     border-radius: .4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    &:not(:last-child) {
-        margin-right: 2rem;
-    }
+    
+    margin: 0 1rem 1rem 0; 
 `;
 
 export const CardSolutionimageWrapper = styled.div`

@@ -10,7 +10,7 @@ export const FormContainer = styled.form`
         border-radius: 2.4rem;
         border: 0;
         margin-right: -4rem;
-        padding: 0 3rem 0 1rem;
+        padding: 0 4rem 0 1rem;
         font-size: 1.6rem;
         font-family: 'Barlow';
         border: 1px solid #F2F2F2;
@@ -20,6 +20,11 @@ export const FormContainer = styled.form`
         &::placeholder {
         color: #EE0E7D; 
         }  
+
+        @media only screen and (max-width: 800px) {
+          border-radius: 0;
+          width: 100%
+        }
     }
 
     button {
@@ -35,14 +40,19 @@ export const FormContainer = styled.form`
         }        
     }
 `; 
-export const ErrorWrapper = styled.div`
+export const ErrorWrapper = styled.span`
     text-align: center;
     font-size: 1.4rem;
     font-family: 'Barlow';
+
+    @media screen and (max-width: 800px) {        
+        text-align: left;
+    } 
 `; 
 
 export const Error = styled.div`
     display: block;
     color: #c53030;
-    margin-top: 1rem;
+    margin-top: .5rem;
+
 `;

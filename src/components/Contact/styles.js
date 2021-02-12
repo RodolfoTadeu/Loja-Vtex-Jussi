@@ -19,6 +19,10 @@ export const ContantContainer = styled.div`
         text-align: center;
         line-height: 4.0rem;
         margin-bottom: 3.2rem;
+
+        @media screen and (max-width: 500px) {        
+          font-size: 3rem;
+        } 
     }
 
     span {
@@ -36,5 +40,9 @@ export const ContantContainer = styled.div`
       color: #fff;
       font-weight: 500;
       text-align: center;
+
+      @media screen and (max-width: 500px) {        
+          font-size: 2.5rem;
+        } 
     }
 `;

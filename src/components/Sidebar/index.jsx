@@ -6,8 +6,6 @@ CloseIcon,
 SidebarWrapper,
 SidebarMenu,
 SidebarLink,
-SideBtnWrap,
-SidebarRoute
 } from './styles'
 
 const Sidebar = ({isOpen, toggle}) => {
@@ -18,12 +16,29 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
               <SidebarMenu>
-                <SidebarLink to='solucao' onClick={toggle}>Nossas soluções</SidebarLink>
-                <SidebarLink to='jussi' onClick={toggle}>Conheça a Jüssi</SidebarLink>                
-              </SidebarMenu>
-              <SideBtnWrap>
-                <SidebarRoute to="/login">Login</SidebarRoute>
-              </SideBtnWrap>
+                <SidebarLink
+                to='solucoes'
+                onClick={toggle}
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}                
+                >
+                  Nossas soluções
+                </SidebarLink>
+                <SidebarLink
+                to='jussi'
+                onClick={toggle}
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80} 
+                >
+                  Conheça a Jüssi
+                </SidebarLink>                
+              </SidebarMenu>      
             </SidebarWrapper>
         </SidebarContainer>
     )

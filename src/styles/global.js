@@ -12,6 +12,7 @@ export default createGlobalStyle`
 html{
   /*font-size: 1rem = 10px 10px/16 = 62.5 */
   font-size: 62.5%; 
+  transition: all 0.2s ease;
 
   @media only screen and (max-width: 1024px) {
         font-size: 50%;
