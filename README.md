@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 <div align="center">
-    <img src="./gif/jussi.gif" alt="Loja-Vtex-Jussi" height="770">
+    <img src="./gif/jussi.gif" alt="Loja-Vtex-Jussi" >
 </div>
 
 # Getting Started with Create React App
